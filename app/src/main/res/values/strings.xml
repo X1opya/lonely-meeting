@@ -1,6 +1,11 @@
 <resources>
+    <integer name="com_vk_sdk_AppId">7092721</integer>
     <string name="app_name">lonely-meeting</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
