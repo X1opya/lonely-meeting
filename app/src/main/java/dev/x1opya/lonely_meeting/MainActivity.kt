@@ -5,9 +5,10 @@ import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import com.vk.api.sdk.VK
+import dev.x1opya.lonely_meeting.groups_screen.GroupFragment
 import dev.x1opya.lonely_meeting.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import dev.x1opya.lonely_meeting.list.ListFragment
+import dev.x1opya.lonely_meeting.list_screen.ListFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +20,11 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
+                supportFragmentManager.beginTransaction().replace(contentFrame.id, GroupFragment.newInstance()).commitNowAllowingStateLoss()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                return@OnNavigationItemSelectedListener true
+                return@OnNavigationItemSelectedListener  false
             }
         }
         false

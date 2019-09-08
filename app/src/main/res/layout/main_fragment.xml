@@ -5,13 +5,13 @@
 		<import type="android.view.View"/>
 		<variable
 			name="viewModel"
-			type="dev.x1opya.lonely_meeting.list.ListViewModel"/>
+			type="dev.x1opya.lonely_meeting.list_screen.ListViewModel"/>
 	</data>
 	<LinearLayout
 		android:orientation="vertical"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		tools:context=".list.ListFragment">
+		tools:context=".list_screen.ListFragment">
 
 		<androidx.recyclerview.widget.RecyclerView
 			android:id="@+id/recyclerView"
